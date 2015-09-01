@@ -1,5 +1,19 @@
 angular.module('starter.services', [])
 
+.factory('searchAddress()', ['$http', '$q', function($http, $q) {
+	return {
+		getZones: function() {
+			var q = $q.defer();
+			$http.get('http://datasets.antwerpen.be/v4/gis/paparkeertariefzones.json').
+				success(function(data, status, headers, config) {
+					q.resolve(data.data);
+				});
+			return q.promise;
+		}
+	}
+}])
+
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

@@ -9,6 +9,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
+    window.localStorage['val1'] = 'It is certain';
+    window.localStorage['val2'] = 'It is decidedly so';
+    window.localStorage['val3'] = 'Without a doubt';
+    window.localStorage['val4'] = 'Yes definitely';
+    window.localStorage['val5'] = 'You may rely on it';
+    window.localStorage['val6'] = 'As I see it, yes';
+    window.localStorage['val7'] = 'Most likely';
+    window.localStorage['val8'] = 'Outlook good';
+    window.localStorage['val9'] = 'Yes';
+    window.localStorage['val10'] = 'Reply hazy try again';
+    window.localStorage['val11'] = 'Ask again later';
+    window.localStorage['val12'] = 'Better not tell you now';
+    window.localStorage['val13'] = 'Cannot predict now';
+    window.localStorage['val14'] = 'Concentrate and ask again';
+    window.localStorage['val15'] = 'Dont count on it';
+    window.localStorage['val16'] = 'My reply is no';
+    window.localStorage['val17'] = 'My sources say no';
+    window.localStorage['val18'] = 'Outlook not so good';
+    window.localStorage['val19'] = 'Very doubtful';
+    window.localStorage['val20'] = 'Signs point to yes';
+    
+    
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
