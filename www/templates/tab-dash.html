@@ -1,0 +1,12 @@
+<ion-view view-title="Magic 8ball">
+  <ion-content class="padding">
+    <div class="Question">
+      <form name="myForm" ng-controller="ExampleController">
+    <label>Email:
+      <input type="email" name="input" ng-model="email.text" required>
+    </label>
+    <button class='button button-clear button-positive' ng-click='searchAddress();'>Search</button>
+  </form>
+    </div>
+  </ion-content>
+</ion-view>
