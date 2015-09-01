@@ -2,6 +2,14 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
+.controller('ExampleController', function($scope, Dash) {
+
+
+  var name = window.localStorage['val1'];
+
+})
+
+
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
